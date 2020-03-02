@@ -35,7 +35,7 @@
 
 			<a
 				class="
-                    text-black hover:bg-black hover:text-white transition-color duration-75 border-4
+                    text-black hover:bg-black hover:text-white transition-color duration-75 border-4 border-solid
                     border-black rounded-full shadow p-8 py-2 text-xl text-center w-full sm:w-1/2 block mx-auto
                 "
 				href="mailto:hello@white-wall.dev"
