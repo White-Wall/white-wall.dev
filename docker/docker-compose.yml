@@ -60,7 +60,7 @@ services:
       - ENABLE_IPV6=true
     volumes:
       - nginx-internal-conf:/etc/nginx/conf.d
-      - nginx-internal-vhosts:/etc/nginx/vhost.d:ro
+      - nginx-internal-vhosts:/etc/nginx/vhost.d
       - nginx-internal-certs:/etc/nginx/certs
       - ./nginx.tmpl:/etc/docker-gen/templates/nginx.tmpl:ro
       - /var/run/docker.sock:/tmp/docker.sock:ro
@@ -74,7 +74,7 @@ services:
     container_name: letsencrypt
     volumes:
       - nginx-internal-conf:/etc/nginx/conf.d
-      - nginx-internal-vhosts:/etc/nginx/vhost.d:ro
+      - nginx-internal-vhosts:/etc/nginx/vhost.d
       - nginx-internal-html:/usr/share/nginx/html
       - nginx-internal-certs:/etc/nginx/certs
       - /var/run/docker.sock:/var/run/docker.sock:ro
