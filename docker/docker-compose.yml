@@ -30,6 +30,7 @@ services:
       - 8.8.8.8
     volumes:
       - /var/factor/node_modules/
+    env_file: ../.env
     environment:
       VIRTUAL_HOST: white-wall.dev
       LETSENCRYPT_HOST: white-wall.dev
