@@ -1,0 +1,14 @@
+.DS_Store
+.dockerignore
+docker
+.env.example
+.git
+.gitignore
+.nvmrc
+docker-compose.yml
+Dockerfile
+node_modules
+npm-debug.log
+package-lock.json
+yarn.lock
+yarn-error.log
