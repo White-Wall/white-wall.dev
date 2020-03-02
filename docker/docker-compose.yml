@@ -29,7 +29,6 @@ services:
       - 1.1.1.1
       - 8.8.8.8
     volumes:
-      - .:/var/factor
       - /var/factor/node_modules/
     environment:
       VIRTUAL_HOST: white-wall.dev
