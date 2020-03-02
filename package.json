@@ -3,9 +3,6 @@
   "version": "1.0.0",
   "description": "White Wall OÜ landing page",
   "main": "src/index",
-  "scripts": {
-    "heroku-postbuild": "yarn factor build"
-  },
   "private": true,
   "factor": {
     "load": [
