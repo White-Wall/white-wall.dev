@@ -3,6 +3,7 @@ version: "3.7"
 volumes:
   mongo_data: {}
   nginx-internal-conf: {}
+  nginx-internal-vhosts: {}
   nginx-internal-html: {}
   nginx-internal-certs: {}
 
@@ -47,6 +48,7 @@ services:
       - com.github.jrcs.letsencrypt_nginx_proxy_companion.nginx_proxy
     volumes:
       - nginx-internal-conf:/etc/nginx/conf.d:ro
+      - nginx-internal-vhosts:/etc/nginx/vhost.d:ro
       - nginx-internal-html:/usr/share/nginx/html:ro
       - nginx-internal-certs:/etc/nginx/certs:ro
 
@@ -58,6 +60,7 @@ services:
       - ENABLE_IPV6=true
     volumes:
       - nginx-internal-conf:/etc/nginx/conf.d
+      - nginx-internal-vhosts:/etc/nginx/vhost.d:ro
       - nginx-internal-certs:/etc/nginx/certs
       - ./nginx.tmpl:/etc/docker-gen/templates/nginx.tmpl:ro
       - /var/run/docker.sock:/tmp/docker.sock:ro
@@ -71,6 +74,7 @@ services:
     container_name: letsencrypt
     volumes:
       - nginx-internal-conf:/etc/nginx/conf.d
+      - nginx-internal-vhosts:/etc/nginx/vhost.d:ro
       - nginx-internal-html:/usr/share/nginx/html
       - nginx-internal-certs:/etc/nginx/certs
       - /var/run/docker.sock:/var/run/docker.sock:ro
