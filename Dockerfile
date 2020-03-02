@@ -5,10 +5,10 @@ RUN apk --no-cache add unzip bzip2 curl && \
     unzip /tmp/master.zip -d /tmp && \
     rm /tmp/master.zip && \
     mv tmp/white-wall.dev-master /var/factor && \
-    chown -R node:node /var/factor && \
     cd /var/factor && \
     yarn install && \
-    yarn factor build
+    yarn factor build && \
+    chown -R node:node /var/factor
 
 USER node
 WORKDIR /var/factor
