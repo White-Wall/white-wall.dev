@@ -1,5 +1,5 @@
 <template>
-	<div class="text-center text-gray-500 -mt-6">
+	<div class="text-center text-gray-500 absolute w-full bottom-0">
 		©️ {{ year }} White Wall OÜ —
 		<a class="hover:underline" href="/privacy">Privacy policy</a>
 	</div>
