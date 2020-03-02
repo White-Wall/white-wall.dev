@@ -1,0 +1,30 @@
+{
+  "name": "white-wall",
+  "version": "1.0.0",
+  "description": "White Wall OÜ landing page",
+  "main": "src/index",
+  "private": true,
+  "factor": {
+    "load": [
+      {
+        "app": "index",
+        "server": "server"
+      }
+    ],
+    "app": {
+      "name": "WhiteWall",
+      "description": "WhiteWall landing page",
+      "email": "sebastian@white-wall.dev",
+      "url": "white-wall.dev"
+    }
+  },
+  "dependencies": {
+    "@factor/core": "^1.4.5",
+    "@factor/plugin-notify": "^1.3.12",
+    "@factor/plugin-seo": "^1.3.5",
+    "@factor/plugin-sitemap": "^1.3.5",
+    "@factor/plugin-contact-form": "^1.4.4",
+    "@factor/plugin-storage-s3": "^1.3.1",
+    "@factor/theme-zeno": "^1.4.5"
+  }
+}
