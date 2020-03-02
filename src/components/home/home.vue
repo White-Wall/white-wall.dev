@@ -1,6 +1,6 @@
 <template>
-	<div class="flex items-center justify-center w-full min-h-screen h-full">
-		<div class="p-4 sm:p-16">
+	<div class="flex md:items-center justify-center w-full min-h-screen h-full">
+		<div class="p-4 pt-8 sm:p-16">
 			<div class="flex flex-col justify-center">
 				<svg
 					xmlns="http://www.w3.org/2000/svg"
