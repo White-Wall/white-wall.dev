@@ -35,7 +35,7 @@ services:
       VIRTUAL_HOST: white-wall.dev
       LETSENCRYPT_HOST: white-wall.dev
       FACTOR_ADMINS: sebastian@white-wall.dev
-      DB_CONNECTION: mongodb+srv://factor:factor@mongo/factor?retryWrites=true&w=majority
+      DB_CONNECTION: mongodb://factor:factor@mongo/factor?retryWrites=true&w=majority
       FACTOR_URL: https://white-wall.dev
 
   nginx:
