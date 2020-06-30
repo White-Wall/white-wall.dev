@@ -32,8 +32,8 @@ services:
       - /var/factor/node_modules/
     env_file: ../.env
     environment:
-      VIRTUAL_HOST: white-wall.dev
-      LETSENCRYPT_HOST: white-wall.dev
+      VIRTUAL_HOST: "white-wall.dev,white-wall.tech,white-wall.io,white-wall.work"
+      LETSENCRYPT_HOST: "white-wall.dev,white-wall.tech,white-wall.io,white-wall.work"
       FACTOR_ADMINS: sebastian@white-wall.dev
       DB_CONNECTION: mongodb://factor:factor@mongo/factor?retryWrites=true&w=majority
       FACTOR_URL: https://white-wall.dev
